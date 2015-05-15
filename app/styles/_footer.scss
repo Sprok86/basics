@@ -1,0 +1,59 @@
+/* Footer */
+
+
+$dark-background-color: black !default;
+$secondary-font-color: white !default;
+$third-font-color: grey !default;
+$footer-item-narrow-max-width: 80% !default;  //must change here;
+
+/* Footer 3cols with narrow col*/
+
+.footer-3cols {
+	background-color: $dark-background-color;
+	.footer-item {
+		color: $secondary-font-color;
+		padding-top:3.25em;
+		padding-bottom:3.25em;
+		text-align: center;
+	}
+	.footer-item:last-child {  //remove it if last colums is narrow
+		p {
+			padding-bottom: 1.75em;
+		}
+	}
+	
+	.footer-item-narrow { //narrow column class
+		max-width: $footer-item-narrow-max-width;
+		margin: 0 auto;
+		p {
+			padding-bottom: 1.75em;
+		}
+	}
+	.social-footer-row,
+	.payment-footer-row {
+		>li {
+			padding-left: 5px;
+			padding-right: 5px;
+			& > a > i {
+			    color: $secondary-font-color !important;	
+			    &:hover,
+			    &:active {
+			    	color: $third-font-color !important;
+			    }
+
+			}
+		}
+	}
+}
+
+/* Helper classes */
+.inline-list {
+	list-style: none;
+}
+
+.inline-list, 
+.inline-list li {
+  	margin: 0;
+  	padding: 0;
+    display: inline;
+}

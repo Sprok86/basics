@@ -1,0 +1,49 @@
+/*COMPONENTS */
+
+$light-gray: #ddd !default;
+$medium-gray: #999 !default;
+$white: #fff !default;
+$big-font-size: 1.5em !default;
+$accordion-line-height: 2em !default;
+$accordion-max-width: 500px !default;
+$secondary-background-color: #eee !default;
+
+/* Accordion styles (on the main page) */
+.accordion-main {
+    max-width: $accordion-max-width;
+    margin: 100px auto;
+    text-align: center;
+
+		dd {
+		    margin: 0;
+			padding: 1em 0;
+			background: $secondary-background-color;
+		}
+		dt {
+		    cursor: pointer;
+		    font-weight: bold;
+		    font-size : $big-font-size;
+		    line-height: $accordion-line-height;
+		    background: $light-gray;
+		    border-bottom: 1px solid $medium-gray;
+		    border-top: 1px solid $white;
+
+		    &:first-child { border-top: none; }
+		    &:nth-last-child(2) { border-bottom: none; }
+		}
+
+}
+//for simple paint area
+.paint-area {
+	position: relative;
+}
+.dot {
+    height: 16px;
+    width: 16px;
+    border-radius: 8px; 
+    background: orange;
+    position: absolute;
+}
+/* helper classes */
+.hide-accordion {display: none;}
+/* END Accordion styles */

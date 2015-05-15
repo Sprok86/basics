@@ -1,0 +1,100 @@
+/* NAVs */
+
+/* 1 Navbar  centered fixed bootstrap */
+$navbar-max-width: 98% !default;
+$navbar-inner-max-width: 50% !default; //must change in case of number of links
+$navbar-height: 50px !default;
+$navbar-font-size: 16px !default;
+$base-font-color: grey !default;
+
+.centered-bootstrap-body {
+	padding-top: $navbar-height;
+	.navbar-main {
+		margin-bottom: 0px !important;
+		.navbar-container {
+			font-size: $navbar-font-size;
+            max-width: $navbar-max-width;
+            .nav-wrapper {
+				max-width: $navbar-inner-max-width; 
+				margin: 0 auto !important;
+				.nav-centered {
+					width: 100% !important;
+				}
+			}
+		}
+	}
+	.nav-centered > li {
+	    float: none !important;
+	    & > a {
+	   		color: $base-font-color !important;
+	    	margin-bottom: 5px;
+  			text-align: center;
+	    }
+	}
+	.nav-centered > .dropdown .dropdown-menu {
+	    top: auto;
+	    left: auto;
+	}
+
+	//override bootstrap defaults
+	.navbar-nav {
+		margin: 0;
+	}
+	
+
+	@media (min-width: 768px) {
+		.nav-centered > li {
+		    display: table-cell;
+		    width: 1%;
+		    & > a {
+		    	margin-bottom: 0;	
+		    }
+	  	}
+	}
+}
+
+
+
+
+/* 2 centered-and-right-element */
+$search-form-max-width-desktop: 160px !default;
+$search-form-width-mobile: $navbar-inner-max-width !default;
+$light-blue: lightblue !default;
+
+
+.centered-and-right-element-body {
+	@extend .centered-bootstrap-body;
+	.btn {
+		i {
+			color: $base-font-color !important;
+		}
+	}
+
+	.blue-tooltip + .tooltip > .tooltip-inner {
+		background-color: $light-blue;
+	}
+	.blue-tooltip + .tooltip > .tooltip-arrow {
+		border-bottom-color: $light-blue;
+	}
+	
+	@media (max-width: 767px) {
+		.search-form {
+			width: $search-form-width-mobile;
+			margin: 0 auto;
+		}
+	}
+	@media (min-width: 768px) {
+		.search-form {
+			max-width: $search-form-max-width-desktop;
+		}
+	}
+
+}
+
+/* helper classes */
+.relative-position {
+	position: relative !important; //used to push content down
+}
+.padding-top-0 {
+	padding-top: 0; //used to push content down
+}

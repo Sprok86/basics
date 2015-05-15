@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>basic templates | Bootstrap</title>
+    <meta name="description" content="basic templates">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="/styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <style>
+      #js-basic-js-examples-content-area {
+        margin-top: 5%;
+      }
+      .basic-item {
+        text-align: center;
+        border: 1px dashed grey;
+        padding: 15px;
+      }
+      .basic-item p {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body class="basic-js-examples">
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="js-basic-js-examples-content-area" class ="col-md-offset-3 col-md-6">
+      <div class="basic-item">
+        <button class="btn btn-default js-show-btn" type="button">Show</button>
+        <p>Initial array: <span id="js-initial-array"></span></p>
+      </div>
+      <div class="basic-item">
+        <button class="btn btn-default js-show-btn" type="button">Show</button>
+        <p>Default sort: <span id="js-default-sort"></span></p>
+      </div>
+       <div class="basic-item">
+        <button class="btn btn-default js-show-btn" type="button">Show</button>
+        <p>Ascending sort: <span id="js-ascending-sort"></span></p>
+      </div>
+      <div class="basic-item">
+        <button class="btn btn-default js-show-btn" type="button">Show</button>
+        <p>Descending sort: <span id="js-descending-sort"></span></p>
+      </div>
+      <div class="basic-item">
+        <div class="input-group">
+            <input type="text" id="js-reduce-input" class="form-control" placeholder="enter number value here or leave blank">
+            <span class="input-group-btn">
+               <button class="btn btn-default js-show-btn" type="button">Show</button>
+            </span>
+        </div><!-- /input-group -->
+        <p>Reduce sum function: <span id="js-reduce"></span></p>
+      </div>
+      <div class="basic-item paint-area" id="js-simple-paint-area">
+        <p>Paint by mouse click inside this area</p>
+      </div>
+
+    </div>
+  
+
+    
+    
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="/scripts/main.js"></script>
+        <!-- endbuild -->
+        <!-- build:js({app,.tmp}) basicExamples.js -->
+        <script src="/scripts/basicExamples.js"></script>
+        <!-- endbuild -->
+
+       
+</body>
+</html>

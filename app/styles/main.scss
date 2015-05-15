@@ -1,0 +1,41 @@
+// bower:scss
+@import "bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "components-font-awesome/scss/font-awesome.scss";
+// endbower
+
+/* "Basic templates with Bootsrap"
+   Made by Sergii Prokopenko
+   v .0.0.1 
+
+   All components are made independenly,
+   common variables are located in _variables.scss file,
+   also, all variables for each component are in corresponding
+   component's Sass file
+*/
+
+/* BASE - Base styles, variables, mixins, etc */
+ @import "_variables.scss";
+ @import "_mixins.scss";
+ @import "_base.scss";
+ @import "_typography.scss";
+
+
+
+ /* MODULES - Individual site components */
+ @import "_blocks.scss";
+ @import "_buttons.scss";
+ @import "_components.scss";
+
+  /* LAYOUTS - Page layout styles */
+ @import "_header.scss";
+ @import "_nav.scss";
+ @import "_footer.scss";
+
+ /* Mediaqueries */
+  @import "_mediaqueries.scss";
+ 
+
+
+
+
+

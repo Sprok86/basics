@@ -1,0 +1,11 @@
+{
+  "name": "basic",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "modernizr": "~2.8.2",
+    "bootstrap": "~3.3.4",
+    "bourbon": "~4.2.2",
+    "components-font-awesome": "~4.3.0"
+  }
+}

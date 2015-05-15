@@ -1,0 +1,27 @@
+/* BASE */
+
+body, html {
+  background: $base-background-color !important;
+  color: $base-font-color !important;
+  font-family: $base-font-family !important;
+  font-size: $base-font-size !important;
+  line-height: $base-line-height !important;
+}
+
+a {
+	text-decoration: none;
+	color: $dark-gray;
+	&:hover,
+	&:active {
+		color: $medium-gray;
+		text-decoration: none;
+	}
+}
+
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>basic templates | Bootstrap</title>
+    <meta name="description" content="basic templates">
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+<style>
+  .progress {
+    position: fixed;
+    border: 1px solid red;
+    width: 200px;
+    top: 20px; right: 20px;
+  }
+  .progress > div {
+    height: 50px;
+    background: orange;
+    width: 0%;
+  }
+  body {
+    height: 3000px;
+  }
+</style>
+<body>
+  <div class="progress">
+    <div></div>
+  </div>
+  <script>
+    var bar = document.querySelector(".progress div");
+    addEventListener("scroll", function() {
+      console.log(document.body.scrollHeight); //body height
+      console.log("innerHeight:", window.innerHeight); //window visible height 
+      console.log("pageYOffset:", window.pageYOffset); //distance from current position to top
+
+      var max = document.body.scrollHeight - innerHeight;
+      var percent = (pageYOffset / max) * 100;
+      bar.style.width = percent + "%";
+    });
+  </script>
+</body>
+</html>
